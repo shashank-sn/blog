@@ -1,0 +1,20 @@
+---
+layout: default
+---
+<article class="post">
+  <p class="meta">{{ page.date | date: '%-d %B %Y' }}</p>
+  {{ content }}
+  {% if page.skill %}
+  <aside class="skill">
+    <p class="label">the skill for this post</p>
+    <h2>{{ page.skill.name }}</h2>
+    <p>{{ page.skill.summary }}</p>
+    <p class="actions">
+      <a class="button" href="{{ page.skill.zip | relative_url }}" download>download .zip</a>
+      <a href="https://github.com/shashank-sn/blog/tree/main/skills/{{ page.skill.name }}">read the files on github</a>
+    </p>
+    <p class="install">Unzip it into <code>~/.claude/skills/</code> (Claude Code) or the skills folder of your agent. Then ask the agent to use <code>{{ page.skill.name }}</code>.</p>
+  </aside>
+  {% endif %}
+  <p class="ask">A question about this post? <a href="https://github.com/shashank-sn/blog/issues/new?title={{ page.title | url_encode }}">Open an issue</a>.</p>
+</article>
