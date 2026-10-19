@@ -1,0 +1,43 @@
+# Fill this in once per company. The skill reads it. It holds pointers and approved text only.
+
+company:
+  name: ""
+  domain: ""
+  product_names: []        # every name the product goes by
+  category_words: []       # the words a buyer would search for, for example "gpu scheduling"
+
+# Required. The company's approved descriptions of itself, word for word.
+approved_blocks:
+  one_line: ""             # under 120 characters
+  short: ""                # one paragraph
+  long: ""                 # two or three paragraphs
+
+# Required. Numbers the company has cleared for public use, each with its source.
+cleared_numbers:
+  - claim: ""
+    source: ""
+
+# Words and claims the company does not want used.
+do_not_say: []
+
+# Where the rest of the material lives. URLs or repo paths.
+sources:
+  docs: ""
+  guides_or_blog: ""
+  proof_points: ""
+  brand_or_messaging_doc: ""
+  install_guide: ""
+
+# Accounts the company already holds, if known.
+accounts:
+  github_org: ""
+  docker_hub: ""
+  hugging_face: ""
+  other: []
+
+# Who makes changes live, per place type. Name a role, not a password.
+owners:
+  github: ""
+  registries: ""
+  docs: ""
+  directories: ""
