@@ -4,6 +4,7 @@ Source checks (always):
   - every skill folder has a zip in downloads/ whose files match the folder byte for byte
   - every post names a skill whose folder and zip exist
   - post titles and descriptions are lowercase
+  - no post file name carries a future date (UTC), which Jekyll would skip
 
 Built-site checks (when a _site folder is given):
   - every post page was built
@@ -15,6 +16,7 @@ import os
 import re
 import sys
 import zipfile
+from datetime import datetime, timezone
 from html.parser import HTMLParser
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -66,6 +68,8 @@ def check_posts():
         if not f.endswith(".md"):
             continue
         fm = front_matter(os.path.join(posts_dir, f))
+        if f[:10] > datetime.now(timezone.utc).strftime("%Y-%m-%d"):
+            errors.append(f"{f}: date is in the future (UTC), so Jekyll will not build it")
         for key in ("title", "description"):
             value = field(fm, key)
             if not value:
