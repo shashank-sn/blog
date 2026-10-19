@@ -5,6 +5,7 @@ Source checks (always):
   - every post names a skill whose folder and zip exist
   - post titles and descriptions are lowercase
   - no post file name carries a future date (UTC), which Jekyll would skip
+  - every inline SVG figure scopes its styles to its own id
 
 Built-site checks (when a _site folder is given):
   - every post page was built
@@ -59,6 +60,24 @@ def check_skills_and_zips():
             errors.append(f"skill {name}: zip does not match folder ({', '.join(stale[:5])}); run scripts/build-zips.sh")
         if not os.path.exists(os.path.join(folder, "SKILL.md")):
             errors.append(f"skill {name}: SKILL.md is missing")
+
+
+def check_figures():
+    """Inline SVG styles are global in HTML, so every rule must be scoped to its figure's id."""
+    figs = os.path.join(ROOT, "_includes", "figs")
+    if not os.path.isdir(figs):
+        return
+    for f in sorted(os.listdir(figs)):
+        if not f.endswith(".svg"):
+            continue
+        text = open(os.path.join(figs, f), encoding="utf-8").read()
+        fid = "fig-" + f[:-4]
+        if f'<svg id="{fid}"' not in text:
+            errors.append(f"figure {f}: root <svg> needs id=\"{fid}\"")
+        for css in re.findall(r"<style>(.*?)</style>", text, re.S):
+            for selector in re.findall(r"([^{}]+)\{", css):
+                if not selector.strip().startswith(f"#{fid}"):
+                    errors.append(f"figure {f}: style rule '{selector.strip()}' is not scoped to #{fid}")
 
 
 def check_posts():
@@ -126,6 +145,7 @@ def check_built_site(site, slugs):
 
 def main():
     check_skills_and_zips()
+    check_figures()
     slugs = check_posts()
     if len(sys.argv) > 1:
         check_built_site(sys.argv[1], slugs)
