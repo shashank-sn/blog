@@ -1,14 +1,14 @@
-<svg viewBox="0 0 680 470" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="dl-t">
+<svg id="fig-delivery-loop" viewBox="0 0 680 470" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="dl-t">
   <title id="dl-t">the eleven stages of the delivery loop, each with the evidence it leaves</title>
   <style>
-    .box { fill: #ffffff; stroke: #121212; stroke-width: 1.5; }
-    .gate { fill: #121212; }
-    .n { font-size: 12px; font-weight: 700; fill: #ffffff; }
-    .s { font-size: 15px; font-weight: 700; fill: #121212; }
-    .e { font-size: 12.5px; fill: #6b6b6b; }
-    .line { stroke: #121212; stroke-width: 1.5; fill: none; }
-    .back { stroke: #6b6b6b; stroke-width: 1.5; fill: none; stroke-dasharray: 5 5; }
-    .lbl { font-size: 13px; fill: #6b6b6b; }
+    #fig-delivery-loop .box { fill: #ffffff; stroke: #121212; stroke-width: 1.5; }
+    #fig-delivery-loop .gate { fill: #121212; }
+    #fig-delivery-loop .n { font-size: 12px; font-weight: 700; fill: #ffffff; }
+    #fig-delivery-loop .s { font-size: 15px; font-weight: 700; fill: #121212; }
+    #fig-delivery-loop .e { font-size: 12.5px; fill: #6b6b6b; }
+    #fig-delivery-loop .line { stroke: #121212; stroke-width: 1.5; fill: none; }
+    #fig-delivery-loop .back { stroke: #6b6b6b; stroke-width: 1.5; fill: none; stroke-dasharray: 5 5; }
+    #fig-delivery-loop .lbl { font-size: 13px; fill: #6b6b6b; }
   </style>
   <defs>
     <marker id="dl-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#121212"/></marker>
@@ -40,7 +40,7 @@
   <path class="line" d="M158 357 H178" marker-end="url(#dl-a)"/>
   <path class="line" d="M330 357 H350" marker-end="url(#dl-a)"/>
   <!-- learning goes back to the start -->
-  <path class="back" d="M502 357 H600 V440 H40 V100" marker-end="url(#dl-g)"/>
+  <path class="back" d="M502 357 H600 V440 H2 V57 H6" marker-end="url(#dl-g)"/>
   <text class="lbl" x="250" y="460">the lesson from each ship feeds the next route</text>
   <!-- legend -->
   <circle class="gate" cx="560" cy="300" r="7"/><text class="lbl" x="574" y="304">a gate</text>

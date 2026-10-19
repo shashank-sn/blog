@@ -1,14 +1,14 @@
-<svg viewBox="0 0 680 210" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="lc-t">
+<svg id="fig-link-checks" viewBox="0 0 680 210" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="lc-t">
   <title id="lc-t">three logged-out checks for one link: it opens without a sign-in, it is the right file type, and it has the right content</title>
   <style>
-    .box { fill: #ffffff; stroke: #121212; stroke-width: 1.5; }
-    .ink { fill: #121212; }
-    .t { font-size: 15px; font-weight: 700; fill: #121212; }
-    .tw { font-size: 15px; font-weight: 700; fill: #ffffff; }
-    .s { font-size: 12.5px; fill: #6b6b6b; }
-    .sw { font-size: 12.5px; fill: #d9d9d9; }
-    .n { font-size: 12px; font-weight: 700; fill: #ffffff; }
-    .line { stroke: #121212; stroke-width: 1.5; fill: none; }
+    #fig-link-checks .box { fill: #ffffff; stroke: #121212; stroke-width: 1.5; }
+    #fig-link-checks .ink { fill: #121212; }
+    #fig-link-checks .t { font-size: 15px; font-weight: 700; fill: #121212; }
+    #fig-link-checks .tw { font-size: 15px; font-weight: 700; fill: #ffffff; }
+    #fig-link-checks .s { font-size: 12.5px; fill: #6b6b6b; }
+    #fig-link-checks .sw { font-size: 12.5px; fill: #d9d9d9; }
+    #fig-link-checks .n { font-size: 12px; font-weight: 700; fill: #ffffff; }
+    #fig-link-checks .line { stroke: #121212; stroke-width: 1.5; fill: none; }
   </style>
   <defs><marker id="lc-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#121212"/></marker></defs>
   <!-- logged-out window -->

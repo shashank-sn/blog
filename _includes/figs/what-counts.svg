@@ -1,18 +1,18 @@
-<svg viewBox="0 0 680 280" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="wc-t">
+<svg id="fig-what-counts" viewBox="0 0 680 280" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="wc-t">
   <title id="wc-t">all readings go in; controls and brand questions are held out; the rate is built only from what is left</title>
   <style>
-    .box { fill: #ffffff; stroke: #121212; stroke-width: 1.5; }
-    .ink { fill: #121212; }
-    .held { fill: #f5f5f5; stroke: #6b6b6b; stroke-width: 1.5; stroke-dasharray: 5 4; }
-    .t { font-size: 15px; font-weight: 700; fill: #121212; }
-    .tw { font-size: 15px; font-weight: 700; fill: #ffffff; }
-    .s { font-size: 12.5px; fill: #6b6b6b; }
-    .sw { font-size: 12.5px; fill: #d9d9d9; }
-    .dot { fill: #121212; }
-    .ring { fill: #ffffff; stroke: #121212; stroke-width: 1.5; }
-    .sq { fill: #6b6b6b; }
-    .line { stroke: #121212; stroke-width: 1.5; fill: none; }
-    .dash { stroke: #6b6b6b; stroke-width: 1.5; fill: none; stroke-dasharray: 5 4; }
+    #fig-what-counts .box { fill: #ffffff; stroke: #121212; stroke-width: 1.5; }
+    #fig-what-counts .ink { fill: #121212; }
+    #fig-what-counts .held { fill: #f5f5f5; stroke: #6b6b6b; stroke-width: 1.5; stroke-dasharray: 5 4; }
+    #fig-what-counts .t { font-size: 15px; font-weight: 700; fill: #121212; }
+    #fig-what-counts .tw { font-size: 15px; font-weight: 700; fill: #ffffff; }
+    #fig-what-counts .s { font-size: 12.5px; fill: #6b6b6b; }
+    #fig-what-counts .sw { font-size: 12.5px; fill: #d9d9d9; }
+    #fig-what-counts .dot { fill: #121212; }
+    #fig-what-counts .ring { fill: #ffffff; stroke: #121212; stroke-width: 1.5; }
+    #fig-what-counts .sq { fill: #6b6b6b; }
+    #fig-what-counts .line { stroke: #121212; stroke-width: 1.5; fill: none; }
+    #fig-what-counts .dash { stroke: #6b6b6b; stroke-width: 1.5; fill: none; stroke-dasharray: 5 4; }
   </style>
   <defs>
     <marker id="wc-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#121212"/></marker>
@@ -28,7 +28,7 @@
   </g>
   <circle class="dot" cx="28" cy="180" r="5"/><text class="s" x="40" y="184">question</text>
   <circle class="ring" cx="110" cy="180" r="5"/><text class="s" x="122" y="184">control</text>
-  <rect class="sq" x="23" y="196" width="10" height="10"/><text class="s" x="40" y="205">question that names the brand</text>
+  <rect class="sq" x="23" y="196" width="10" height="10"/><text class="s" x="40" y="205">names the brand</text>
   <!-- rule file gate -->
   <path class="line" d="M198 130 H252" marker-end="url(#wc-a)"/>
   <rect class="ink" x="254" y="86" width="150" height="88" rx="10"/>

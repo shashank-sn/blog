@@ -1,12 +1,12 @@
-<svg viewBox="0 0 680 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="ss-t">
+<svg id="fig-skipped-stages" viewBox="0 0 680 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="ss-t">
   <title id="ss-t">each skipped stage and the failure it lets through</title>
   <style>
-    .skip { fill: #ffffff; stroke: #121212; stroke-width: 1.5; stroke-dasharray: 6 4; }
-    .fail { fill: #121212; }
-    .k { font-size: 15px; font-weight: 700; fill: #121212; }
-    .f { font-size: 14px; fill: #ffffff; }
-    .h { font-size: 13px; fill: #6b6b6b; font-weight: 500; }
-    .line { stroke: #121212; stroke-width: 1.5; }
+    #fig-skipped-stages .skip { fill: #ffffff; stroke: #121212; stroke-width: 1.5; stroke-dasharray: 6 4; }
+    #fig-skipped-stages .fail { fill: #121212; }
+    #fig-skipped-stages .k { font-size: 15px; font-weight: 700; fill: #121212; }
+    #fig-skipped-stages .f { font-size: 14px; fill: #ffffff; }
+    #fig-skipped-stages .h { font-size: 13px; fill: #6b6b6b; font-weight: 500; }
+    #fig-skipped-stages .line { stroke: #121212; stroke-width: 1.5; }
   </style>
   <defs><marker id="ss-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#121212"/></marker></defs>
   <text class="h" x="8" y="18">skipped stage</text>

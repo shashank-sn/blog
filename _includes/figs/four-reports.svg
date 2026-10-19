@@ -1,13 +1,13 @@
-<svg viewBox="0 0 680 250" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="fr-t">
+<svg id="fig-four-reports" viewBox="0 0 680 250" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="fr-t">
   <title id="fr-t">one draft produces four separate reports, and each can fail on its own</title>
   <style>
-    .box { fill: #ffffff; stroke: #121212; stroke-width: 1.5; }
-    .ink { fill: #121212; }
-    .t { font-size: 15px; font-weight: 700; fill: #121212; }
-    .tw { font-size: 16px; font-weight: 700; fill: #ffffff; }
-    .s { font-size: 12.5px; fill: #6b6b6b; }
-    .ok { font-size: 13px; font-weight: 700; fill: #121212; }
-    .line { stroke: #121212; stroke-width: 1.5; fill: none; }
+    #fig-four-reports .box { fill: #ffffff; stroke: #121212; stroke-width: 1.5; }
+    #fig-four-reports .ink { fill: #121212; }
+    #fig-four-reports .t { font-size: 15px; font-weight: 700; fill: #121212; }
+    #fig-four-reports .tw { font-size: 16px; font-weight: 700; fill: #ffffff; }
+    #fig-four-reports .s { font-size: 12.5px; fill: #6b6b6b; }
+    #fig-four-reports .ok { font-size: 13px; font-weight: 700; fill: #121212; }
+    #fig-four-reports .line { stroke: #121212; stroke-width: 1.5; fill: none; }
   </style>
   <defs><marker id="fr-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#121212"/></marker></defs>
   <rect class="ink" x="250" y="8" width="180" height="48" rx="10"/>

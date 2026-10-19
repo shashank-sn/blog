@@ -1,13 +1,13 @@
-<svg viewBox="0 0 680 250" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="cl-t">
+<svg id="fig-clusters" viewBox="0 0 680 250" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="cl-t">
   <title id="cl-t">480 raw readings collapse into 40 question clusters that each move together</title>
   <style>
-    .box { fill: #ffffff; stroke: #121212; stroke-width: 1.5; }
-    .t { font-size: 15px; font-weight: 700; fill: #121212; }
-    .big { font-size: 40px; font-weight: 700; fill: #121212; }
-    .s { font-size: 12.5px; fill: #6b6b6b; }
-    .dot { fill: #121212; }
-    .grp { fill: #f5f5f5; stroke: #121212; stroke-width: 1.2; }
-    .line { stroke: #121212; stroke-width: 1.5; fill: none; }
+    #fig-clusters .box { fill: #ffffff; stroke: #121212; stroke-width: 1.5; }
+    #fig-clusters .t { font-size: 15px; font-weight: 700; fill: #121212; }
+    #fig-clusters .big { font-size: 40px; font-weight: 700; fill: #121212; }
+    #fig-clusters .s { font-size: 12.5px; fill: #6b6b6b; }
+    #fig-clusters .dot { fill: #121212; }
+    #fig-clusters .grp { fill: #f5f5f5; stroke: #121212; stroke-width: 1.2; }
+    #fig-clusters .line { stroke: #121212; stroke-width: 1.5; fill: none; }
   </style>
   <defs><marker id="cl-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#121212"/></marker></defs>
   <!-- raw -->
