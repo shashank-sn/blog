@@ -1,0 +1,41 @@
+<svg viewBox="0 0 680 250" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="fr-t">
+  <title id="fr-t">one draft produces four separate reports, and each can fail on its own</title>
+  <style>
+    .box { fill: #ffffff; stroke: #121212; stroke-width: 1.5; }
+    .ink { fill: #121212; }
+    .t { font-size: 15px; font-weight: 700; fill: #121212; }
+    .tw { font-size: 16px; font-weight: 700; fill: #ffffff; }
+    .s { font-size: 12.5px; fill: #6b6b6b; }
+    .ok { font-size: 13px; font-weight: 700; fill: #121212; }
+    .line { stroke: #121212; stroke-width: 1.5; fill: none; }
+  </style>
+  <defs><marker id="fr-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#121212"/></marker></defs>
+  <rect class="ink" x="250" y="8" width="180" height="48" rx="10"/>
+  <text class="tw" x="340" y="38" text-anchor="middle">one draft</text>
+  <path class="line" d="M340 56 V78 M85 78 H595 M85 78 V100 M255 78 V100 M425 78 V100 M595 78 V100" />
+  <path class="line" d="M85 92 V100" marker-end="url(#fr-a)"/><path class="line" d="M255 92 V100" marker-end="url(#fr-a)"/><path class="line" d="M425 92 V100" marker-end="url(#fr-a)"/><path class="line" d="M595 92 V100" marker-end="url(#fr-a)"/>
+  <g>
+    <rect class="box" x="8" y="102" width="154" height="130" rx="10"/>
+    <text class="t" x="22" y="128">voice fit</text>
+    <text class="s" x="22" y="150">does it match</text><text class="s" x="22" y="166">the profile?</text>
+    <rect class="box" x="22" y="190" width="58" height="26" rx="13"/><text class="ok" x="51" y="208" text-anchor="middle">pass</text>
+  </g>
+  <g>
+    <rect class="box" x="178" y="102" width="154" height="130" rx="10"/>
+    <text class="t" x="192" y="128">patterns</text>
+    <text class="s" x="192" y="150">generic phrasing,</text><text class="s" x="192" y="166">stacked hedges</text>
+    <rect class="box" x="192" y="190" width="58" height="26" rx="13"/><text class="ok" x="221" y="208" text-anchor="middle">pass</text>
+  </g>
+  <g>
+    <rect class="box" x="348" y="102" width="154" height="130" rx="10"/>
+    <text class="t" x="362" y="128">facts</text>
+    <text class="s" x="362" y="150">is every claim</text><text class="s" x="362" y="166">sourced?</text>
+    <rect class="ink" x="362" y="190" width="58" height="26" rx="13"/><text class="ok" x="391" y="208" text-anchor="middle" fill="#ffffff" style="fill:#ffffff">fail</text>
+  </g>
+  <g>
+    <rect class="box" x="518" y="102" width="154" height="130" rx="10"/>
+    <text class="t" x="532" y="128">approval</text>
+    <text class="s" x="532" y="150">a person's call,</text><text class="s" x="532" y="166">never a score</text>
+    <rect class="box" x="532" y="190" width="80" height="26" rx="13" stroke-dasharray="4 3"/><text class="ok" x="572" y="208" text-anchor="middle">waiting</text>
+  </g>
+</svg>

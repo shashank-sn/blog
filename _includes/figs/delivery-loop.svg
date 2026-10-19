@@ -1,0 +1,47 @@
+<svg viewBox="0 0 680 470" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="dl-t">
+  <title id="dl-t">the eleven stages of the delivery loop, each with the evidence it leaves</title>
+  <style>
+    .box { fill: #ffffff; stroke: #121212; stroke-width: 1.5; }
+    .gate { fill: #121212; }
+    .n { font-size: 12px; font-weight: 700; fill: #ffffff; }
+    .s { font-size: 15px; font-weight: 700; fill: #121212; }
+    .e { font-size: 12.5px; fill: #6b6b6b; }
+    .line { stroke: #121212; stroke-width: 1.5; fill: none; }
+    .back { stroke: #6b6b6b; stroke-width: 1.5; fill: none; stroke-dasharray: 5 5; }
+    .lbl { font-size: 13px; fill: #6b6b6b; }
+  </style>
+  <defs>
+    <marker id="dl-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#121212"/></marker>
+    <marker id="dl-g" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6b6b6b"/></marker>
+  </defs>
+  <!-- row 1: stages 1-4 -->
+  <g transform="translate(8,20)"><rect class="box" width="150" height="74" rx="10"/><circle class="gate" cx="20" cy="20" r="11"/><text class="n" x="20" y="24" text-anchor="middle">1</text><text class="s" x="38" y="25">route</text><text class="e" x="14" y="52">risk and size</text></g>
+  <g transform="translate(180,20)"><rect class="box" width="150" height="74" rx="10"/><circle class="gate" cx="20" cy="20" r="11"/><text class="n" x="20" y="24" text-anchor="middle">2</text><text class="s" x="38" y="25">grill</text><text class="e" x="14" y="52">answered questions</text></g>
+  <g transform="translate(352,20)"><rect class="box" width="150" height="74" rx="10"/><circle class="gate" cx="20" cy="20" r="11"/><text class="n" x="20" y="24" text-anchor="middle">3</text><text class="s" x="38" y="25">spec</text><text class="e" x="14" y="52">stories, out of scope</text></g>
+  <g transform="translate(524,20)"><rect class="box" width="150" height="74" rx="10"/><circle class="gate" cx="20" cy="20" r="11"/><text class="n" x="20" y="24" text-anchor="middle">4</text><text class="s" x="38" y="25">slices</text><text class="e" x="14" y="52">demoable tickets</text></g>
+  <!-- row 2: stages 8-5 (right to left) -->
+  <g transform="translate(524,170)"><rect class="box" width="150" height="74" rx="10"/><circle class="gate" cx="20" cy="20" r="11"/><text class="n" x="20" y="24" text-anchor="middle">5</text><text class="s" x="38" y="25">build</text><text class="e" x="14" y="52">red, then green</text></g>
+  <g transform="translate(352,170)"><rect class="box" width="150" height="74" rx="10"/><circle class="gate" cx="20" cy="20" r="11"/><text class="n" x="20" y="24" text-anchor="middle">6</text><text class="s" x="38" y="25">simplify</text><text class="e" x="14" y="52">same behaviour</text></g>
+  <g transform="translate(180,170)"><rect class="box" width="150" height="74" rx="10"/><circle class="gate" cx="20" cy="20" r="11"/><text class="n" x="20" y="24" text-anchor="middle">7</text><text class="s" x="38" y="25">prune</text><text class="e" x="14" y="52">reference search</text></g>
+  <g transform="translate(8,170)"><rect class="box" width="150" height="74" rx="10"/><circle class="gate" cx="20" cy="20" r="11"/><text class="n" x="20" y="24" text-anchor="middle">8</text><text class="s" x="38" y="25">dogfood</text><text class="e" x="14" y="52">journeys walked</text></g>
+  <!-- row 3: stages 9-11 -->
+  <g transform="translate(8,320)"><rect class="box" width="150" height="74" rx="10"/><circle class="gate" cx="20" cy="20" r="11"/><text class="n" x="20" y="24" text-anchor="middle">9</text><text class="s" x="38" y="25">verify</text><text class="e" x="14" y="52">state per commit</text></g>
+  <g transform="translate(180,320)"><rect class="box" width="150" height="74" rx="10"/><circle class="gate" cx="20" cy="20" r="11"/><text class="n" x="20" y="24" text-anchor="middle">10</text><text class="s" x="38" y="25">review</text><text class="e" x="14" y="52">standards | spec</text></g>
+  <g transform="translate(352,320)"><rect class="box" width="150" height="74" rx="10"/><circle class="gate" cx="20" cy="20" r="11"/><text class="n" x="20" y="24" text-anchor="middle">11</text><text class="s" x="38" y="25">ship</text><text class="e" x="14" y="52">pr, ci, lesson</text></g>
+  <!-- arrows -->
+  <path class="line" d="M158 57 H178" marker-end="url(#dl-a)"/>
+  <path class="line" d="M330 57 H350" marker-end="url(#dl-a)"/>
+  <path class="line" d="M502 57 H522" marker-end="url(#dl-a)"/>
+  <path class="line" d="M599 94 V168" marker-end="url(#dl-a)"/>
+  <path class="line" d="M524 207 H504" marker-end="url(#dl-a)"/>
+  <path class="line" d="M352 207 H332" marker-end="url(#dl-a)"/>
+  <path class="line" d="M180 207 H160" marker-end="url(#dl-a)"/>
+  <path class="line" d="M83 244 V318" marker-end="url(#dl-a)"/>
+  <path class="line" d="M158 357 H178" marker-end="url(#dl-a)"/>
+  <path class="line" d="M330 357 H350" marker-end="url(#dl-a)"/>
+  <!-- learning goes back to the start -->
+  <path class="back" d="M502 357 H600 V440 H40 V100" marker-end="url(#dl-g)"/>
+  <text class="lbl" x="250" y="460">the lesson from each ship feeds the next route</text>
+  <!-- legend -->
+  <circle class="gate" cx="560" cy="300" r="7"/><text class="lbl" x="574" y="304">a gate</text>
+</svg>
