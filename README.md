@@ -11,6 +11,6 @@ Each post comes with a skill you can download and run in Claude Code or any agen
 | `downloads/` | A .zip of each skill, linked from its post |
 | `scripts/build-zips.sh` | Rebuilds the .zip files after a skill changes |
 
-Questions and problems go in [issues](https://github.com/shashank-sn/blog/issues). This repo does not take pull requests. A workflow closes them.
+Questions and problems go in [issues](https://github.com/shashank-sn/blog/issues). Only collaborators can open pull requests (repository setting).
 
 Skills are MIT licensed. Posts are copyright Shashank SN.
