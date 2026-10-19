@@ -71,11 +71,13 @@ pre code { padding: 0; background: none; }
 
 .intro p { color: var(--muted); font-size: 20px; }
 
-ul.posts { list-style: none; padding: 0; margin: 40px 0 0; border-top: 1px solid var(--rule); }
+section.lane { margin-top: 48px; }
+section.lane h2 { font-size: 15px; font-weight: 500; color: var(--muted); margin: 0 0 8px; letter-spacing: 0.02em; }
+ul.posts { list-style: none; padding: 0; margin: 0; border-top: 1px solid var(--rule); }
 ul.posts li { margin: 0; border-bottom: 1px solid var(--rule); }
 ul.posts a { display: grid; gap: 4px; padding: 24px 0; text-decoration: none; transition: padding 0.2s var(--ease); }
 ul.posts a:hover { padding-left: 8px; }
-ul.posts .date { color: var(--muted); font-size: 14px; font-weight: 500; }
+ul.posts .tag { color: var(--muted); font-size: 14px; font-weight: 500; margin-top: 4px; }
 ul.posts .title { font-size: 24px; font-weight: 700; line-height: 1.2; }
 ul.posts .desc { color: var(--muted); }
 
@@ -113,6 +115,19 @@ footer.site {
   font-size: 14px;
 }
 footer.site a { color: var(--muted); }
+
+/* figures: inline svg diagrams, ink on paper */
+figure.fig { margin: 36px 0; }
+figure.fig svg { display: block; width: 100%; height: auto; font-family: var(--font); }
+figure.fig figcaption { color: var(--muted); font-size: 15px; margin-top: 10px; }
+
+/* tables in posts */
+.post table { width: 100%; border-collapse: collapse; margin: 0 0 24px; font-size: 16px; display: block; overflow-x: auto; }
+.post th, .post td { text-align: left; padding: 8px 12px 8px 0; border-bottom: 1px solid var(--rule); vertical-align: top; }
+.post th { font-weight: 700; }
+
+/* about */
+.about .portrait { width: 100%; max-width: 320px; aspect-ratio: 1; object-fit: cover; border-radius: 12px; display: block; margin: 0 0 32px; filter: grayscale(1); }
 
 @media (max-width: 520px) {
   body { font-size: 17px; }

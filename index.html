@@ -5,14 +5,23 @@ layout: default
   <h1>{{ site.title }}</h1>
   <p>{{ site.description }}</p>
 </section>
-<ul class="posts">
-  {% for post in site.posts %}
-  <li>
-    <a href="{{ post.url | relative_url }}">
-      <span class="date">{{ post.date | date: '%-d %b %Y' }}</span>
-      <span class="title">{{ post.title }}</span>
-      <span class="desc">{{ post.description }}</span>
-    </a>
-  </li>
-  {% endfor %}
-</ul>
+{% assign lanes = "build,write,research,operate,presence" | split: "," %}
+{% for lane in lanes %}
+  {% assign lane_posts = site.posts | where: "lane", lane | sort: "order" %}
+  {% if lane_posts.size > 0 %}
+  <section class="lane">
+    <h2>{{ lane }}</h2>
+    <ul class="posts">
+      {% for post in lane_posts %}
+      <li>
+        <a href="{{ post.url | relative_url }}">
+          <span class="title">{{ post.title }}</span>
+          <span class="desc">{{ post.description }}</span>
+          {% if post.skill %}<span class="tag">skill · {{ post.skill.name }}</span>{% endif %}
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+{% endfor %}
