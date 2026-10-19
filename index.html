@@ -1,0 +1,18 @@
+---
+layout: default
+---
+<section class="intro">
+  <h1>{{ site.title }}</h1>
+  <p>{{ site.description }}</p>
+</section>
+<ul class="posts">
+  {% for post in site.posts %}
+  <li>
+    <a href="{{ post.url | relative_url }}">
+      <span class="date">{{ post.date | date: '%-d %b %Y' }}</span>
+      <span class="title">{{ post.title }}</span>
+      <span class="desc">{{ post.description }}</span>
+    </a>
+  </li>
+  {% endfor %}
+</ul>
