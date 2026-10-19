@@ -10,7 +10,7 @@ description: >-
 license: MIT
 metadata:
   author: Shashank SN
-  version: "1.0.0"
+  version: "1.1.0"
   source: https://github.com/shashank-sn/blog
 ---
 
@@ -75,7 +75,9 @@ Use `references/skill-template.md`. Keep SKILL.md under 500 lines. Put detail in
 
 ### 6. Test scenarios
 
-Write `evals/evals.json` with at least three scenarios: a company with full sources, a company with a missing required source (the skill must stop and ask), and a company whose sources disagree (the skill must report the conflict).
+Write `evals/evals.json` with at least three scenarios: a company with full sources, a company with a missing required source (the skill must stop and ask), and a company whose sources disagree (the skill must report the conflict). Put the sources for each scenario in `evals/fixtures/`, for an invented company. Never use a real client's facts in a fixture.
+
+If the skill has scripts, run each script once against a fixture before step 7. A script that has never run is not ready for a clean test.
 
 ### 7. Clean test
 
@@ -92,3 +94,8 @@ For each problem the test finds, decide: is the skill unclear, or is a rule miss
 | `references/exemplar-research.md` | How to find and judge the best pages on a place |
 | `references/skill-template.md` | The SKILL.md skeleton for the skill you build |
 | `references/clean-test.md` | How to run and judge the clean test |
+
+## Changelog
+
+- 1.1.0: after a clean test with a fresh agent. Exemplar measurements must come from raw pages or API responses. Test fixtures use an invented company. Scripts must run once against a fixture before the clean test.
+- 1.0.0: first version.

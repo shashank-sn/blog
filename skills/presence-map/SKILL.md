@@ -10,7 +10,7 @@ description: >-
 license: MIT
 metadata:
   author: Shashank SN
-  version: "1.0.0"
+  version: "1.1.0"
   source: https://github.com/shashank-sn/blog
 ---
 
@@ -46,6 +46,8 @@ Copy this list into your notes and check off each step.
 
 Ask the person for the items in `references/sources-template.yaml`. Accept a file, a repo that holds them, or answers in chat. Write the answers to `presence/sources.yaml`. If the approved descriptions or the cleared numbers are missing, stop and ask. Those two items are required.
 
+Open each source URL and each account in the file. List any that do not load, and ask the person how to continue before step 2. A link that does not work now will be broken in every draft.
+
 ### 2. Map
 
 Use `references/places.md` as the list of place types. For each type:
@@ -70,13 +72,15 @@ Start with one-time places of priority 1.
 
 For each one-time place, open the live page and check it against `references/audit-checklist.md`. Each item gets `PASS`, `FAIL`, or `WARN`, and one line of evidence (a quote or a measurement). Write the results to `presence/audit/<place>.md`.
 
+If a place has `status: missing`, there is no page to audit. Record the check that shows it is missing (for example "HTTP 404 signed out"). Then draft the page to create in step 6, and add "create the account or page" to the engineering tasks with its owner.
+
 ### 5. Best pages
 
 For each audited place, find at least five strong pages from companies in the same category. Pick the best three. For each one, write the URL, the date, and two or three concrete things that make it good, such as "first screen says what it does in one sentence" or "16 topics, all category and problem words". These become the bar for your draft.
 
 ### 6. Draft
 
-Draft every field the place has. For each field, write the limit if the place has one, the text, and the source of the text (`approved block: short`, `cleared numbers: line 4`, `docs: /install`). Check each draft against the best pages from step 5 and against the rules above. Write the drafts to `presence/drafts/<place>.md`.
+Draft every field the place has. For each field, write the limit if the place has one, the text, and the source of the text (`approved block: short`, `cleared numbers: line 4`, `docs: /install`). Take each limit from the place's current official docs, with the URL and the date you read it. If you cannot read the docs, mark the limit `[unverified]`. Do not take a limit from memory. Check each draft against the best pages from step 5 and against the rules above. Write the drafts to `presence/drafts/<place>.md`.
 
 ### 7. Report
 
@@ -97,3 +101,8 @@ End with the reminder that nothing in the report is live yet.
 | `references/sources-template.yaml` | The intake questions, in the form of a file the company fills in |
 | `references/places.md` | Place types to check, and what matters on each |
 | `references/audit-checklist.md` | The audit items, each with a lens |
+
+## Changelog
+
+- 1.1.0: after a clean test with a fresh agent. Intake now checks that every source URL loads. Missing places get a draft page and a "create" task. Field limits must come from current docs, not memory.
+- 1.0.0: first version.

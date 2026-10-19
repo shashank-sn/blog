@@ -15,6 +15,8 @@ Open each page signed out. For each one, record:
 - What the first screen says, in one line.
 - Measurements: word count, number of tags or topics, number of links, image count, length of each field.
 - What a reader can do next (install, read docs, contact).
+
+Take measurements from the raw page or the raw API response, for example with a short script. A summary from a fetch tool is not a measurement. If a number is an estimate, write "about" and say why.
 - Anything wrong: stale facts, broken links, empty fields.
 
 ## Pick
