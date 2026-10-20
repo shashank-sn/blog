@@ -1,0 +1,18 @@
+{
+  "name": "presence-map",
+  "version": "1.1.0",
+  "description": "Maps every public place a company controls where buyers and AI tools read about it (GitHub, package and image registries, model hubs, docs, MCP and agent directories), sorts the places into one-time and recurring, audits the one-time places against the company's own sources, and drafts the fixes. Never publishes. Use when asked to audit a company's online presence, check what AI tools see about a company, or plan where a company should show up.",
+  "author": {
+    "name": "Shashank SN",
+    "url": "https://github.com/shashank-sn"
+  },
+  "homepage": "https://github.com/shashank-sn/workflows/tree/main/presence/presence-map",
+  "repository": "https://github.com/shashank-sn/workflows",
+  "license": "MIT",
+  "keywords": [
+    "presence",
+    "devrel",
+    "ai-visibility",
+    "audit"
+  ]
+}

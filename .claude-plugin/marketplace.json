@@ -1,0 +1,88 @@
+{
+  "name": "shashank-workflows",
+  "owner": {
+    "name": "Shashank SN",
+    "url": "https://github.com/shashank-sn"
+  },
+  "description": "Workflows written down step by step, each packaged as an agent skill: delivery loop, voice profile, measurement protocol, deliverable audit, presence map, and skill-from-setup.",
+  "version": "1.0.0",
+  "plugins": [
+    {
+      "name": "delivery-loop",
+      "source": "./build/delivery-loop",
+      "description": "Runs a code change from request to an open pull request through eleven gated stages (route, grill, spec, slices, build, simplify, prune, dogfood, verify at the revision, two-axis review, ship) and leaves evidence at each stage.",
+      "version": "1.1.0",
+      "category": "build",
+      "tags": [
+        "coding-agents",
+        "delivery",
+        "code-review",
+        "verification"
+      ]
+    },
+    {
+      "name": "voice-profile",
+      "source": "./write/voice-profile",
+      "description": "Builds an explicit, testable voice profile from a writer's or company's existing samples, checks it against held-out samples, writes an editing brief, and reviews drafts with voice fit, pattern findings, factual evidence and approval kept as four separate reports.",
+      "version": "1.1.0",
+      "category": "write",
+      "tags": [
+        "writing",
+        "voice",
+        "editing",
+        "style-guide"
+      ]
+    },
+    {
+      "name": "measurement-protocol",
+      "source": "./research/measurement-protocol",
+      "description": "Designs and runs a measurement of a noisy, moving system (for example how often a brand appears in AI answer engines) without inventing progress: one rule file, equal readings, held-out controls and brand questions, repeats clustered by question, a minimum detectable rate, a calibration run, and a list of blind spots.",
+      "version": "1.1.0",
+      "category": "research",
+      "tags": [
+        "measurement",
+        "analytics",
+        "answer-engines",
+        "aeo"
+      ]
+    },
+    {
+      "name": "deliverable-audit",
+      "source": "./operate/deliverable-audit",
+      "description": "Audits a library of digital products for broken or missing delivery links.",
+      "version": "1.1.0",
+      "category": "operate",
+      "tags": [
+        "digital-products",
+        "links",
+        "support",
+        "audit"
+      ]
+    },
+    {
+      "name": "presence-map",
+      "source": "./presence/presence-map",
+      "description": "Maps every public place a company controls where buyers and AI tools read about it (GitHub, package and image registries, model hubs, docs, MCP and agent directories), sorts the places into one-time and recurring, audits the one-time places against the company's own sources, and drafts the fixes.",
+      "version": "1.1.0",
+      "category": "presence",
+      "tags": [
+        "presence",
+        "devrel",
+        "ai-visibility",
+        "audit"
+      ]
+    },
+    {
+      "name": "skill-from-setup",
+      "source": "./presence/skill-from-setup",
+      "description": "Turns a one-time setup on one public place (a GitHub README, a registry listing, a directory entry, a profile page) into a reusable agent skill that any company can run.",
+      "version": "1.1.0",
+      "category": "presence",
+      "tags": [
+        "agent-skills",
+        "playbooks",
+        "skill-authoring"
+      ]
+    }
+  ]
+}

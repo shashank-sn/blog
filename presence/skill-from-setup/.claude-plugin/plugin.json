@@ -1,0 +1,17 @@
+{
+  "name": "skill-from-setup",
+  "version": "1.1.0",
+  "description": "Turns a one-time setup on one public place (a GitHub README, a registry listing, a directory entry, a profile page) into a reusable agent skill that any company can run. Audits real pages on that place first, splits objective rules from company-specific sources, writes the SKILL.md and its reference files, and tests the skill with a fresh agent. Use when asked to make a skill, playbook, or repeatable process for a platform, listing, or profile.",
+  "author": {
+    "name": "Shashank SN",
+    "url": "https://github.com/shashank-sn"
+  },
+  "homepage": "https://github.com/shashank-sn/workflows/tree/main/presence/skill-from-setup",
+  "repository": "https://github.com/shashank-sn/workflows",
+  "license": "MIT",
+  "keywords": [
+    "agent-skills",
+    "playbooks",
+    "skill-authoring"
+  ]
+}
