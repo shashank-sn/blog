@@ -1,0 +1,10 @@
+%% each skipped stage and the failure it lets through
+flowchart LR
+  G1["skip grill"] --> F1["the agent builds the wrong thing, well"]
+  G2["skip spec"] --> F2["every reviewer has a different idea of done"]
+  G3["skip slices"] --> F3["one giant pr that nobody can review"]
+  G4["skip dogfood"] --> F4["happy path works, the empty state crashes"]
+  G5["skip verify at revision"] --> F5["tests pass about code that changed since"]
+  G6["skip two-axis review"] --> F6["style comments bury the missing requirement"]
+  classDef ink fill:#121212,color:#ffffff,stroke:#121212
+  class F1,F2,F3,F4,F5,F6 ink

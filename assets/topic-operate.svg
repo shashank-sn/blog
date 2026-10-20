@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 220" width="620" height="220" font-family="'Google Sans', -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" role="img" aria-labelledby="t">
+  <title id="t">operate: the unglamorous fixes that keep a small business running.</title>
+  <rect class="paper" width="620" height="220" rx="18" fill="#ffffff"/>
+  <rect x="1" y="1" width="618" height="218" rx="18" fill="none" stroke="#121212" stroke-width="2"/>
+  <text x="36" y="72" font-size="40" font-weight="700" fill="#121212" letter-spacing="-0.5">operate</text>
+  <path stroke="#121212" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round" d="M506 52 h20 v20 h-20 z M536 70 h20 v20 h-20 z M556 44 h20 v20 h-20 z"/><path stroke="#121212" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round" d="M526 62 L536 80 M556 80 L566 64"/>
+  <text x="36" y="108" font-size="18" fill="#6b6b6b">the unglamorous fixes that keep a</text><text x="36" y="134" font-size="18" fill="#6b6b6b">small business running.</text>
+  <rect x="36" y="168" width="548" height="1" fill="#e6e6e6"/>
+  <text x="36" y="196" font-size="15" font-weight="500" fill="#121212">1 workflow →</text>
+  <text x="584" y="196" font-size="15" fill="#6b6b6b" text-anchor="end">skill: deliverable-audit</text>
+</svg>

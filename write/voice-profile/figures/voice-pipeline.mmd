@@ -1,0 +1,9 @@
+%% samples split into a build set and a held-out set, then the profile, the brief and the check
+flowchart TB
+  S["samples<br/>one writer, one channel,<br/>one format, five or more"] --> B["build set"]
+  S -.-> H["held out<br/>never seen by the profile"]
+  B --> P["profile v1<br/>rhythm, vocabulary, punctuation,<br/>openings, endings, banned forms"]
+  H -. "does it recognise these?" .-> P
+  P --> E["editing brief<br/>keep meaning and evidence,<br/>cut filler and setup"] --> C["check a draft<br/>four reports, kept apart"]
+  classDef ink fill:#121212,color:#ffffff,stroke:#121212
+  class P ink

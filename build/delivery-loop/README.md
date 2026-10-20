@@ -24,9 +24,9 @@ eleven stages. each one has a gate, and each gate leaves something you can look 
 10. **review on two axes.** one review asks "does this meet our standards?". the other asks "does this do what the spec says?". run them in parallel and report them side by side. don't rank one against the other.
 11. **ship.** commit, push, open a pr in plain english, watch ci, check the deployed result, and write down what you learned.
 
-![the eleven stages. every dot is a gate, and every box names the evidence its stage leaves behind.](figures/delivery-loop.svg)
+![the eleven stages, in three rows: plan, make, prove. every box names the evidence its stage leaves behind, and the lesson from each ship feeds the next route.](figures/delivery-loop.svg)
 
-*the eleven stages. every dot is a gate, and every box names the evidence its stage leaves behind.*
+*the eleven stages, in three rows: plan, make, prove. every box names the evidence its stage leaves behind, and the lesson from each ship feeds the next route.*
 
 ## why the gates matter more than the stages
 

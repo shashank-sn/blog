@@ -1,8 +1,4 @@
-<img src="assets/shashank.jpg" width="140" alt="shashank sn, smiling, in black and white">
-
-# workflows
-
-real workflows, written down step by step. every one comes with an agent skill you can install.
+<a href="#the-workflows"><img src="assets/header.svg" width="100%" alt="workflows: real workflows, written down step by step. every one comes with an agent skill you can install."></a>
 
 ## about
 
@@ -15,6 +11,14 @@ most of my work is turning a messy job into a process that runs the same way twi
 this repo is where those processes go once they've held up in real work. each workflow is one page with the exact steps, and one skill you can install in your own agent.
 
 ## the workflows
+
+<p>
+<a href="build/README.md"><img src="assets/topic-build.svg" width="49%" alt="build"></a>
+<a href="write/README.md"><img src="assets/topic-write.svg" width="49%" alt="write"></a>
+<a href="research/README.md"><img src="assets/topic-research.svg" width="49%" alt="research"></a>
+<a href="operate/README.md"><img src="assets/topic-operate.svg" width="49%" alt="operate"></a>
+<a href="presence/README.md"><img src="assets/topic-presence.svg" width="49%" alt="presence"></a>
+</p>
 
 ### [build](build/README.md)
 

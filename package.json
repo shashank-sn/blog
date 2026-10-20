@@ -1,0 +1,12 @@
+{
+  "name": "workflows",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "figures": "node scripts/render-figures.mjs",
+    "figures:check": "node scripts/render-figures.mjs --check"
+  },
+  "devDependencies": {
+    "pele": "1.7.0"
+  }
+}

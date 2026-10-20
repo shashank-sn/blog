@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 220" width="620" height="220" font-family="'Google Sans', -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" role="img" aria-labelledby="t">
+  <title id="t">research: turning a noisy system into a number you can defend.</title>
+  <rect class="paper" width="620" height="220" rx="18" fill="#ffffff"/>
+  <rect x="1" y="1" width="618" height="218" rx="18" fill="none" stroke="#121212" stroke-width="2"/>
+  <text x="36" y="72" font-size="40" font-weight="700" fill="#121212" letter-spacing="-0.5">research</text>
+  <path stroke="#121212" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round" d="M500 92 H578"/><rect x="506" y="70" width="12" height="22" fill="#121212"/><rect x="526" y="56" width="12" height="36" fill="none" stroke="#121212" stroke-width="2.5"/><rect x="546" y="44" width="12" height="48" fill="#121212"/><path stroke="#121212" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4 4" d="M500 64 H578"/>
+  <text x="36" y="108" font-size="18" fill="#6b6b6b">turning a noisy system into a number</text><text x="36" y="134" font-size="18" fill="#6b6b6b">you can defend.</text>
+  <rect x="36" y="168" width="548" height="1" fill="#e6e6e6"/>
+  <text x="36" y="196" font-size="15" font-weight="500" fill="#121212">1 workflow →</text>
+  <text x="584" y="196" font-size="15" fill="#6b6b6b" text-anchor="end">skill: measurement-protocol</text>
+</svg>

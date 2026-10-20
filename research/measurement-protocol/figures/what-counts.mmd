@@ -1,0 +1,7 @@
+%% all readings go in; controls and brand questions are held out; the rate uses only what is left
+flowchart LR
+  R["every reading<br/>questions, controls,<br/>questions that name the brand"] --> F["rule file<br/>decides what counts.<br/>nothing else does."]
+  F --> T["the rate<br/>equal readings per engine · google apart ·<br/>repeats clustered · minimum detectable rate"]
+  F -. "read, never counted" .-> H["held out<br/>controls, brand questions"]
+  classDef ink fill:#121212,color:#ffffff,stroke:#121212
+  class F ink
