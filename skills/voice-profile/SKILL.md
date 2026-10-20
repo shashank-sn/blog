@@ -9,7 +9,7 @@ description: >-
 license: MIT
 metadata:
   author: Shashank SN
-  version: "1.0.0"
+  version: "1.1.0"
   source: https://github.com/shashank-sn/blog
 ---
 
@@ -43,7 +43,7 @@ Turn writing that already exists into a written-down description of a voice, the
 6. **Version.** Add a version and a SHA-256 digest of `profile.md` at the top of the profile. Every later review names this version and digest.
 7. **Review a draft** (when asked). Produce four separate reports in `voice/reviews/<draft>.md`:
    - voice fit against the profile,
-   - pattern findings (generic phrasing, stacked hedges, formulaic structures),
+   - pattern findings (generic phrasing, stacked hedges, formulaic structures). A construction the profile records as part of this voice is never a pattern finding, even if `reference/process.md` lists it as a common tell,
    - factual evidence (each claim and its source, or `unsourced`),
    - approval (always `waiting` until a person signs off).
 8. **Revise** (when asked). Change a profile rule only when two or more examples support the change. Log each change in `voice/changelog.md` and bump the version.
@@ -73,6 +73,11 @@ voice/
   changelog.md
   reviews/<draft>.md   four reports, kept apart
 ```
+
+## Changelog
+
+- 1.1.0: after a clean test with a fresh agent. Banned constructions come from the samples. A construction the profile records as part of the voice is never a pattern finding.
+- 1.0.0: first version.
 
 ## Failure modes
 

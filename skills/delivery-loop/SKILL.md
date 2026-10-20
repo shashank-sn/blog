@@ -9,7 +9,7 @@ description: >-
 license: MIT
 metadata:
   author: Shashank SN
-  version: "1.0.0"
+  version: "1.1.0"
   source: https://github.com/shashank-sn/blog
 ---
 
@@ -53,7 +53,8 @@ Each stage has a stop condition. Do not start a stage while the one before it is
    Stop if: any functional failure is open.
 9. **Verify at the revision.** Run every declared check on the current commit. Record each result with one of seven states and the commit hash (`reference/checklist.md`).
    Stop if: any required check is not `PASS`.
-10. **Two-axis review.** Review the diff twice, separately: Standards (repo conventions, design, tests) and Spec (does it do what `loop/spec.md` says). Report both side by side in `loop/review.md`. Do not merge or rank them.
+   A later commit that only adds `loop/` records keeps these results. A later commit that touches code or tests needs this stage again.
+10. **Two-axis review.** Review the diff twice, separately: Standards (repo conventions, design, tests) and Spec (does it do what `loop/spec.md` says). Report both side by side in `loop/review.md`. Do not merge or rank them. Run each review in a fresh context (a subagent or a new session) that gets the diff and the spec but not your reasoning. If you cannot, write "not independent" at the top of `review.md`.
     Stop if: either axis has a blocking finding.
 11. **Ship.** Commit in logical units, push the feature branch, open a PR with a plain-English body, watch CI, and record the result. Write one line on what you learned in `loop/lesson.md`.
     Stop: always, before merge. Merge needs the person's approval.
@@ -87,6 +88,11 @@ loop/
   pr.md         the PR body as opened
   lesson.md     one line
 ```
+
+## Changelog
+
+- 1.1.0: after a clean test with a fresh agent. Reviews run in a fresh context, or say they are not independent. Commits that only add `loop/` records keep the verify results.
+- 1.0.0: first version.
 
 ## Failure modes
 

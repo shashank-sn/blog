@@ -10,7 +10,7 @@ description: >-
 license: MIT
 metadata:
   author: Shashank SN
-  version: "1.0.0"
+  version: "1.1.0"
   source: https://github.com/shashank-sn/blog
 ---
 
@@ -45,7 +45,7 @@ The fastest way to fake progress is to change the measurement and call it a tren
 6. **Rates.** Hold `control` and `brand` questions out of every rate. Report search engines apart from chat assistants. Cluster repeats by question.
 7. **Precision.** Report the effective sample size after clustering and the minimum detectable rate (`reference/process.md`).
 8. **Blind spots.** List what the measurement cannot see in `measure/blind-spots.md`.
-9. **Report.** Write `measure/report.md` with the method first, then the numbers. If the rule file changed since the last run, label the run a new baseline, not a trend.
+9. **Report.** Write `measure/report.md` with the method first, then the numbers. If the rule file changed since the last run, or the earlier number has no rule file on record, label the run a new baseline, not a trend. You may show the earlier number for context, but not as a comparison.
 
 ## What good looks like
 
@@ -73,6 +73,11 @@ measure/
   report.md            method, rates, n, effective n, mdr, blind spots
   blind-spots.md
 ```
+
+## Changelog
+
+- 1.1.0: after a clean test with a fresh agent. An earlier number with no rule file is context, not a baseline. The minimum detectable rate uses the baseline rate as `p`.
+- 1.0.0: first version.
 
 ## Failure modes
 
