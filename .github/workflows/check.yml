@@ -16,3 +16,10 @@ jobs:
       - uses: actions/checkout@v4
       - name: Check the repo
         run: python3 scripts/check.py
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Check figures match their Mermaid sources
+        run: |
+          npm ci --no-audit --no-fund
+          npm run figures:check

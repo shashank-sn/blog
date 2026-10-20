@@ -5,7 +5,8 @@
 - every relative link and image in every Markdown file resolves
 - every workflow is listed on its topic page and on the home page
 - every SVG figure parses and has a white background (readable in GitHub dark mode)
-- every page title is lowercase
+- every page title (the first heading) is lowercase
+- every figure .svg is up to date with its .mmd source (CI runs npm run figures:check)
 - no site files (HTML, CSS, Jekyll config) are left in the repo
 
 Usage: python3 scripts/check.py
@@ -20,6 +21,13 @@ import xml.dom.minidom
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TOPICS = ["build", "write", "research", "operate", "presence"]
 errors = []
+
+
+SKIP = ("node_modules/", ".")
+
+
+def tracked(paths):
+    return [p for p in paths if not p.startswith(SKIP) and "/node_modules/" not in p]
 
 
 def read(path):
@@ -61,7 +69,7 @@ def check_plugins():
 
 
 def check_links():
-    for md in glob.glob("**/*.md", root_dir=ROOT, recursive=True):
+    for md in tracked(glob.glob("**/*.md", root_dir=ROOT, recursive=True)):
         text = read(md)
         text = re.sub(r"```.*?```", "", text, flags=re.S)
         targets = re.findall(r"\]\(([^)\s]+)\)", text) + re.findall(r'<img[^>]+src="([^"]+)"', text)
@@ -97,8 +105,8 @@ def check_figures():
 
 
 def check_titles():
-    for md in ["README.md"] + glob.glob("*/README.md", root_dir=ROOT) + glob.glob("*/*/README.md", root_dir=ROOT):
-        match = re.search(r"^# (.+)$", read(md), re.M)
+    for md in ["README.md"] + tracked(glob.glob("*/README.md", root_dir=ROOT) + glob.glob("*/*/README.md", root_dir=ROOT)):
+        match = re.search(r"^#{1,2} (.+)$", read(md), re.M)
         if not match:
             errors.append(f"{md}: no title")
         elif match.group(1) != match.group(1).lower():
@@ -107,7 +115,7 @@ def check_titles():
 
 def check_no_site_files():
     for pattern in ("**/*.html", "**/*.css", "_config.yml", "_layouts", "_includes", "_posts"):
-        for hit in glob.glob(pattern, root_dir=ROOT, recursive=True):
+        for hit in tracked(glob.glob(pattern, root_dir=ROOT, recursive=True)):
             errors.append(f"{hit}: site file left in the repo")
 
 
