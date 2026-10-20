@@ -6,6 +6,6 @@
   <path stroke="#121212" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round" d="M520 46 L500 66 L520 86 M556 46 L576 66 L556 86 M546 40 L530 92"/>
   <text x="36" y="108" font-size="18" fill="#6b6b6b">shipping code with a coding agent,</text><text x="36" y="134" font-size="18" fill="#6b6b6b">with a gate and evidence at every stage.</text>
   <rect x="36" y="168" width="548" height="1" fill="#e6e6e6"/>
-  <text x="36" y="196" font-size="15" font-weight="500" fill="#121212">1 workflow →</text>
-  <text x="584" y="196" font-size="15" fill="#6b6b6b" text-anchor="end">skill: delivery-loop</text>
+  <text x="36" y="196" font-size="15" font-weight="500" fill="#121212">2 workflows →</text>
+  <text x="584" y="196" font-size="15" fill="#6b6b6b" text-anchor="end">skills: delivery-loop · two-axis-review</text>
 </svg>
