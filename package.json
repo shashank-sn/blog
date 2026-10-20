@@ -7,6 +7,8 @@
     "figures:check": "node scripts/render-figures.mjs --check"
   },
   "devDependencies": {
-    "pele": "1.7.0"
+    "opentype.js": "2.0.0",
+    "pele": "1.7.0",
+    "subset-font": "2.9.0"
   }
 }
