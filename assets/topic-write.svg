@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 220" width="620" height="220" font-family="'Google Sans', -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" role="img" aria-labelledby="t">
+  <title id="t">write: making a voice explicit, so a draft can be checked instead of argued about.</title>
+  <rect class="paper" width="620" height="220" rx="18" fill="#ffffff"/>
+  <rect x="1" y="1" width="618" height="218" rx="18" fill="none" stroke="#121212" stroke-width="2"/>
+  <text x="36" y="72" font-size="40" font-weight="700" fill="#121212" letter-spacing="-0.5">write</text>
+  <path stroke="#121212" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round" d="M500 50 H576 M500 66 H560 M500 82 H540"/><circle cx="572" cy="82" r="5" fill="#121212"/>
+  <text x="36" y="108" font-size="18" fill="#6b6b6b">making a voice explicit, so a draft can</text><text x="36" y="134" font-size="18" fill="#6b6b6b">be checked instead of argued about.</text>
+  <rect x="36" y="168" width="548" height="1" fill="#e6e6e6"/>
+  <text x="36" y="196" font-size="15" font-weight="500" fill="#121212">1 workflow →</text>
+  <text x="584" y="196" font-size="15" fill="#6b6b6b" text-anchor="end">skill: voice-profile</text>
+</svg>
