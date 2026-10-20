@@ -91,4 +91,4 @@ star the repo to keep it in your list. watch it to hear when a new workflow land
 
 ## license
 
-skills and plugin manifests are [mit](LICENSE). the posts are copyright shashank sn.
+skills and plugin manifests are [mit](LICENSE). the posts are copyright shashank sn. the figures use google sans, under the [sil open font license](fonts/OFL.txt).
