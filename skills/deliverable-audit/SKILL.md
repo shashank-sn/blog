@@ -11,7 +11,7 @@ description: >-
 license: MIT
 metadata:
   author: Shashank SN
-  version: "1.0.0"
+  version: "1.1.0"
   source: https://github.com/shashank-sn/blog
 ---
 
@@ -39,7 +39,7 @@ A broken link is a content bug with a customer attached. Fix it in the product, 
 3. **Map.** For each complaint about delivery, name the product and the deliverable the customer expected.
 4. **Check as a customer.** Open each product page and its delivery path in a logged-out browser. Record what happens.
 5. **Find the canonical file.** Search the file source by current title, old titles, and content. Not only by exact filename.
-   Stop if: two candidates exist. Ask which one is canonical.
+   Stop if: two candidates exist, or the only candidate looks incomplete (empty, a header row only, or a placeholder). Ask which file is canonical.
 6. **Prepare the fix.** Write the new link and where it must change (product content, delivery email, file sharing setting) to `audit/fixes.md`. Change the product only if the person gave you access and said to; otherwise hand over the steps.
 7. **Verify.** For each fixed link, logged out: it opens with no sign-in or access request, the file type matches the product page, and the content is the current version of what the page promised. Record all three in `audit/verify.md`.
    Stop if: any of the three fails. The fix is not done.
@@ -68,6 +68,11 @@ audit/
   replies.md      review id | reply text
   report.md       counts, fixed, still missing, unreadable, next steps
 ```
+
+## Changelog
+
+- 1.1.0: after a clean test with a fresh agent. A candidate that looks incomplete needs the person's confirmation before it counts as canonical.
+- 1.0.0: first version.
 
 ## Failure modes
 

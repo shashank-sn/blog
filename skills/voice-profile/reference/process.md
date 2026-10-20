@@ -14,7 +14,7 @@ Measure each trait across the samples. Give a number where you can, and one quot
 | Punctuation | Rate per 1,000 words of `?`, `!`, `:`, `;`, dashes, parentheses |
 | Case | Sentence case, or all lowercase |
 | Questions | Questions per 100 sentences |
-| Banned constructions | Patterns that never appear, for example "it's not X, it's Y", or stacked hedges |
+| Banned constructions | Patterns that never appear in the samples. Take them from the samples, not from a generic list: a construction the writer uses often is part of the voice |
 
 ## Pattern findings
 

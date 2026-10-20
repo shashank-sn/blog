@@ -30,7 +30,7 @@ If you cannot estimate `rho`, report the two bounds: `effective_n` is between th
 
 ## Minimum detectable rate
 
-For a two-run comparison of a rate near `p`, at about 95% confidence and 80% power:
+For a two-run comparison, at about 95% confidence and 80% power, with `p` the baseline rate (or the current rate when there is no comparable baseline):
 
 ```text
 mdr ≈ 2.8 * sqrt(2 * p * (1 - p) / effective_n)
