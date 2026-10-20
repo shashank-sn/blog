@@ -1,0 +1,18 @@
+{
+  "name": "two-axis-review",
+  "version": "1.0.0",
+  "description": "Reviews a diff on two independent axes and reports them side by side: Standards (the repo's documented conventions plus a baseline of twelve code smells) and Spec (does the change implement the issue, ticket or spec, traced requirement by requirement to code and tests). Read-only. Use when asked to \"review this diff\", \"review the PR\", or run a \"two-axis review\".",
+  "author": {
+    "name": "Shashank SN",
+    "url": "https://github.com/shashank-sn"
+  },
+  "homepage": "https://github.com/shashank-sn/workflows/tree/main/build/two-axis-review",
+  "repository": "https://github.com/shashank-sn/workflows",
+  "license": "MIT",
+  "keywords": [
+    "code-review",
+    "coding-agents",
+    "spec",
+    "code-smells"
+  ]
+}

@@ -26,6 +26,8 @@ shipping code with a coding agent, with a gate and evidence at every stage.
 
 - **[most coding-agent failures are skipped stages](build/delivery-loop/README.md)**  
   the agent builds before anyone agreed on what to build, or says "tests pass" about an old commit. an eleven-stage loop where every gate leaves evidence. skill: `delivery-loop`
+- **[a change can follow every standard and still be the wrong change](build/two-axis-review/README.md)**  
+  you can't judge good code and right code in one review pass. you run a standards pass and a spec pass, and keep the reports apart. skill: `two-axis-review`
 
 ### [write](write/README.md)
 
@@ -66,6 +68,7 @@ in claude code, add this repo as a marketplace once, then install any skill by n
 ```text
 /plugin marketplace add shashank-sn/workflows
 /plugin install delivery-loop@shashank-workflows
+/plugin install two-axis-review@shashank-workflows
 /plugin install voice-profile@shashank-workflows
 /plugin install measurement-protocol@shashank-workflows
 /plugin install deliverable-audit@shashank-workflows
@@ -88,4 +91,4 @@ star the repo to keep it in your list. watch it to hear when a new workflow land
 
 ## license
 
-skills and plugin manifests are [mit](LICENSE). the posts are copyright shashank sn.
+skills and plugin manifests are [mit](LICENSE). the posts are copyright shashank sn. the figures use google sans, under the [sil open font license](fonts/OFL.txt).

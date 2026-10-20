@@ -1,0 +1,11 @@
+%% the spec pass traces each requirement to code, then to five kinds of test
+flowchart LR
+  Q["requirement 3"] --> C["call path<br/>where the code does it"]
+  C --> H["happy path"]
+  C --> B["boundary"]
+  C --> N["negative"]
+  C --> F["failure"]
+  C --> V["recovery"]
+  M["no call path,<br/>or a missing test"] -.-> Z(["that is the finding"])
+  classDef ink fill:#121212,color:#ffffff,stroke:#121212
+  class Z ink

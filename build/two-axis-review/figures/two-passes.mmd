@@ -1,0 +1,12 @@
+%% one diff, two independent passes, two reports side by side
+flowchart TB
+  D["one diff<br/>pinned base and head"] --> S["standards pass<br/>repo rules, then the smell baseline"]
+  D --> P["spec pass<br/>every requirement, traced"]
+  R["repo rules"] -.-> S
+  T["issue, ticket or spec"] -.-> P
+  S --> SR["standards report<br/>clean, or not"]
+  P --> PR["spec report<br/>right, or not"]
+  SR --- X(["reported side by side,<br/>never merged or reranked"])
+  PR --- X
+  classDef ink fill:#121212,color:#ffffff,stroke:#121212
+  class PR ink
