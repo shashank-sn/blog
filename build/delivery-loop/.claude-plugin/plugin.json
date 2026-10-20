@@ -1,0 +1,18 @@
+{
+  "name": "delivery-loop",
+  "version": "1.1.0",
+  "description": "Runs a code change from request to an open pull request through eleven gated stages (route, grill, spec, slices, build, simplify, prune, dogfood, verify at the revision, two-axis review, ship) and leaves evidence at each stage. Stops before merge. Use when asked to \"run the delivery loop\", \"build this properly\", or \"ship this end to end\".",
+  "author": {
+    "name": "Shashank SN",
+    "url": "https://github.com/shashank-sn"
+  },
+  "homepage": "https://github.com/shashank-sn/workflows/tree/main/build/delivery-loop",
+  "repository": "https://github.com/shashank-sn/workflows",
+  "license": "MIT",
+  "keywords": [
+    "coding-agents",
+    "delivery",
+    "code-review",
+    "verification"
+  ]
+}
