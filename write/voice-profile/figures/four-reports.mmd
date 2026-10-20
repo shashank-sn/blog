@@ -1,0 +1,8 @@
+%% one draft produces four separate reports, and each can fail on its own
+flowchart TB
+  D["one draft"] --> V["voice fit<br/>matches the profile?<br/><b>pass</b>"]
+  D --> P["patterns<br/>generic phrasing, stacked hedges<br/><b>pass</b>"]
+  D --> F["facts<br/>is every claim sourced?<br/><b>fail</b>"]
+  D --> A["approval<br/>a person decides<br/><b>waiting</b>"]
+  classDef ink fill:#121212,color:#ffffff,stroke:#121212
+  class D,F ink

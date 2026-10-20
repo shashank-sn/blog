@@ -1,0 +1,18 @@
+%% the eleven stages of the delivery loop, each with the evidence it leaves
+flowchart TB
+  subgraph plan
+    direction LR
+    A["1 · route<br/>risk and size"] --> B["2 · grill<br/>answered questions"] --> C["3 · spec<br/>stories, out of scope"] --> D["4 · slices<br/>demoable tickets"]
+  end
+  subgraph make
+    direction LR
+    E["5 · build<br/>red, then green"] --> F["6 · simplify<br/>same behaviour"] --> G["7 · prune<br/>reference search"] --> H["8 · dogfood<br/>journeys walked"]
+  end
+  subgraph prove
+    direction LR
+    I["9 · verify<br/>state per commit"] --> J["10 · review<br/>standards | spec"] --> K["11 · ship<br/>pr, ci, lesson"]
+  end
+  plan --> make --> prove
+  prove -. "the lesson feeds the next route" .-> plan
+  classDef ink fill:#121212,color:#ffffff,stroke:#121212
+  class I ink
