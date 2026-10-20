@@ -1,6 +1,6 @@
 name: Check
 
-# Builds the site the same way GitHub Pages does, then checks skills, zips, front matter and links.
+# Checks plugin manifests, links, listings, figures and titles.
 on:
   pull_request:
   push:
@@ -14,18 +14,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Check skills, zips and posts
-        run: python3 scripts/check_site.py
-      - name: Build with the GitHub Pages builder
-        uses: actions/jekyll-build-pages@v1
-        with:
-          source: ./
-          destination: ./_site
-      - name: Check the built site
-        run: python3 scripts/check_site.py _site
-      - name: Keep the built site for preview
-        uses: actions/upload-artifact@v4
-        with:
-          name: site
-          path: _site
-          retention-days: 7
+      - name: Check the repo
+        run: python3 scripts/check.py
