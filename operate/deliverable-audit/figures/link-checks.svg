@@ -1,0 +1,31 @@
+<svg font-family="'Google Sans', -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" id="fig-link-checks" viewBox="0 0 680 210" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="lc-t">
+  <title id="lc-t">three logged-out checks for one link: it opens without a sign-in, it is the right file type, and it has the right content</title>
+  <rect class="paper" x="0" y="0" width="100%" height="100%" fill="#ffffff"/>
+  <style>
+    #fig-link-checks .box { fill: #ffffff; stroke: #121212; stroke-width: 1.5; }
+    #fig-link-checks .ink { fill: #121212; }
+    #fig-link-checks .t { font-size: 15px; font-weight: 700; fill: #121212; }
+    #fig-link-checks .tw { font-size: 15px; font-weight: 700; fill: #ffffff; }
+    #fig-link-checks .s { font-size: 12.5px; fill: #6b6b6b; }
+    #fig-link-checks .sw { font-size: 12.5px; fill: #d9d9d9; }
+    #fig-link-checks .n { font-size: 12px; font-weight: 700; fill: #ffffff; }
+    #fig-link-checks .line { stroke: #121212; stroke-width: 1.5; fill: none; }
+  </style>
+  <defs><marker id="lc-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#121212"/></marker></defs>
+  <!-- logged-out window -->
+  <rect class="box" x="8" y="30" width="130" height="150" rx="10"/>
+  <rect class="ink" x="8" y="30" width="130" height="26" rx="10"/><rect class="ink" x="8" y="44" width="130" height="12"/>
+  <circle cx="24" cy="43" r="4" fill="#ffffff"/><circle cx="38" cy="43" r="4" fill="#ffffff"/><circle cx="52" cy="43" r="4" fill="#ffffff"/>
+  <text class="t" x="22" y="86">one link</text>
+  <text class="s" x="22" y="108">private window,</text>
+  <text class="s" x="22" y="124">logged out,</text>
+  <text class="s" x="22" y="140">like a customer</text>
+  <path class="line" d="M138 105 H164" marker-end="url(#lc-a)"/>
+  <!-- checks -->
+  <g transform="translate(166,30)"><rect class="box" width="150" height="150" rx="10"/><circle class="ink" cx="22" cy="24" r="11"/><text class="n" x="22" y="28" text-anchor="middle">1</text><text class="t" x="14" y="62">opens</text><text class="s" x="14" y="84">no sign-in page,</text><text class="s" x="14" y="100">no access request</text></g>
+  <path class="line" d="M316 105 H334" marker-end="url(#lc-a)"/>
+  <g transform="translate(336,30)"><rect class="box" width="150" height="150" rx="10"/><circle class="ink" cx="22" cy="24" r="11"/><text class="n" x="22" y="28" text-anchor="middle">2</text><text class="t" x="14" y="62">right file type</text><text class="s" x="14" y="84">the pdf, sheet or</text><text class="s" x="14" y="100">doc the page names</text></g>
+  <path class="line" d="M486 105 H504" marker-end="url(#lc-a)"/>
+  <g transform="translate(506,30)"><rect class="ink" width="166" height="150" rx="10"/><circle cx="22" cy="24" r="11" fill="#ffffff"/><text x="22" y="28" text-anchor="middle" style="font-size:12px;font-weight:700;fill:#121212">3</text><text class="tw" x="14" y="62">right content</text><text class="sw" x="14" y="84">the current version</text><text class="sw" x="14" y="100">of what the product</text><text class="sw" x="14" y="116">page promised</text></g>
+  <text class="s" x="166" y="204">a 200 response only proves step 1 half-done</text>
+</svg>
