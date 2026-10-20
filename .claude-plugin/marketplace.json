@@ -4,7 +4,7 @@
     "name": "Shashank SN",
     "url": "https://github.com/shashank-sn"
   },
-  "description": "Workflows written down step by step, each packaged as an agent skill: delivery loop, voice profile, measurement protocol, deliverable audit, presence map, and skill-from-setup.",
+  "description": "Workflows written down step by step, each packaged as an agent skill: delivery loop, two-axis review, voice profile, measurement protocol, deliverable audit, presence map, and skill-from-setup.",
   "version": "1.0.0",
   "plugins": [
     {
@@ -18,6 +18,19 @@
         "delivery",
         "code-review",
         "verification"
+      ]
+    },
+    {
+      "name": "two-axis-review",
+      "source": "./build/two-axis-review",
+      "description": "Reviews a diff on two independent axes and reports them side by side: Standards (the repo's documented conventions plus a baseline of twelve code smells) and Spec (does the change implement the issue, ticket or spec, traced requirement by requirement to code and tests).",
+      "version": "1.0.0",
+      "category": "build",
+      "tags": [
+        "code-review",
+        "coding-agents",
+        "spec",
+        "code-smells"
       ]
     },
     {
